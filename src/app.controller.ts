@@ -11,6 +11,6 @@ export class AppController {
   getHello(@Req() req: Request): any {
     const { url, headers, ips } = req;
     const ip = getClientIp(req);
-    return ip;
+    return ip.replace('::ffff:', '');
   }
 }
