@@ -15,6 +15,6 @@ export class AppController {
     // get url of request
     const urlPath = url.split('/')[1];
     console.log({ ip, urlPath });
-    return { url, headers, ips, ip, urlPath };
+    return req;
   }
 }
